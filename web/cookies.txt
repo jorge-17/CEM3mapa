@@ -1,0 +1,5 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+mapserver.inegi.org.mx	TRUE	/CEM3_mapa/	FALSE	1999999999	JSESSIONID	64A789AA9DA8C0F89B5F29613F668475
+mapserver.inegi.org.mx	TRUE	/	FALSE	1999999999	NSC_MC_NbqTfswfs	ffffffff09911d1c45525d5f4f58455e445a4a423660
+
