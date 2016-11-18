@@ -113,7 +113,13 @@ function metodo_inegi(){
      */
     
     geojsonCaneva50k  = L.geoJson(PoliINEGI,{
-            style: $.cem3.styleCaneva50k,
+            style: {
+                weight: 0.7,
+		opacity: 1,
+		color: 'black',
+                fillOpacity: 0,
+                fillColor: '#0431b4'
+            },
             onEachFeature: $.cem3.onEachFeatureCaneva50k
 	});
     
@@ -225,11 +231,16 @@ function metodo_inegi(){
                          * el estado
                          * @type type
                          */
-                        
+                                               
                         var inferior = geojsonEstados._layers[num].getBounds().getSouthWest();
                         var superior = geojsonEstados._layers[num].getBounds().getNorthEast();
                         map.fitBounds(geojsonEstados._layers[num].getBounds());
                         map.addLayer(geojsonCaneva50k);
+                        
+    
+                        
+                        
+                       
 }
 
 function initMap(){

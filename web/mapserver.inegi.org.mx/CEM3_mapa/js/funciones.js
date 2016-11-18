@@ -74,7 +74,8 @@
                 weight: 0.7,
 		opacity: 1,
 		color: 'black',
-                fillOpacity: 0
+                fillOpacity: 0,
+                fillColor: '#0431B4'
             };
         },
         onEachFeatureCaneva50k:function(feature, layer){
@@ -475,10 +476,13 @@
         zoomToFeatureCaneva:function(e){
             var inferior = e.target.getBounds().getSouthWest();
             var superior = e.target.getBounds().getNorthEast();
+            var clave=e.target.feature.properties.clave50k;
             var w = inferior.lng;
             var s = inferior.lat;
             var e = superior.lng;
             var n = superior.lat;
+            console.log(w+"|"+e+"|"+s+"|"+n+" |clave = "+clave);
+            localStorage["ID"]=clave;
 
             map.fitBounds([[s,(w)],[n,(e)]]);
 

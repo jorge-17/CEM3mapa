@@ -16,7 +16,7 @@
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
     <title>Descarga del CEM 3.0</title>
-
+<a href="XML_Lidar/Nube_Puntos_LiDAR_E13B23f3.xml"></a>
     <link rel="icon" type="image/gif" href="css/images/icoINEGI.gif" />
 
     <link rel="stylesheet" href="css/leaflet.css" />
@@ -461,6 +461,7 @@
 <body onLoad="metodo_inegi();">
     
     <div id="map" class="ui-layout-center" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; margin: 0; padding: 0; background: rgb(255, 255, 255); ">
+        
         <div class="area-control-label">
             En resoluci&oacute;n de&nbsp;<span id="labelResolucion"></span>&nbsp;m<br>
             &Aacute;rea m&aacute;xima:&nbsp;<span id="labelAreaMax"></span> km<sup>2</sup><br>

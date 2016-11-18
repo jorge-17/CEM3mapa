@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Metadata>
+<MD_DataIdentification>
+<title>Nube de puntos LiDAR ajustada al terreno, delimitada por el formato cartográfico en escala 1:10,000 con clave H12D22a1.</title>
+<purpose>El producto fue elaborado con el fin inmediato de ser el insumo para generar Modelos Digitales de Elevación (MDE) en el Instituto Nacional de Estadística y Geografía (INEGI); y en general, apoyar la generación de productos y estudios que requieren valores de altura de gran exactitud.</purpose>
+<abstract>La Nube de puntos LiDAR (acrónimo del inglés Light Detection And Ranging) es un conjunto de puntos con coordenadas tridimensionales, generados mediante un emisor de luz láser aerotransportado. Al emitir luz láser, ésta incide sobre los diferentes elementos del terreno (suelo, vegetación, infraestructura, vehículos, etcétera) y se registra la distancia que existe entre cada elemento y el emisor.
+
+El sistema LiDAR aerotransportado, es un sensor activo que consta de un telémetro emisor de luz láser y de un espejo que dirige dicha luz perpendicularmente a la trayectoria del avión; con un desplazamiento lateral al eje de vuelo, permite realizar un escaneo del terreno, durante el cual el sensor genera y emite una serie de pulsos de luz láser, los cuales al entrar en contacto con los objetos o el terreno reflejan o devuelven parte de la energía del pulso emitido al sensor.
+
+El cálculo de las coordenadas del retorno del haz de luz láser para cada punto del terreno, se realiza mediante el procesamiento de información colectada por antenas receptoras GPS (Global Positioning System), la unidad de medición inercial (Inertial Measurement Unit, IMU, por sus siglas en inglés) y el sistema de escaneo (espejo y emisor-receptor de luz láser). La posición de la antena receptora GPS aerotransportada, se calcula en combinación con receptores GPS en tierra; la unidad de medición inercial es útil para determinar la variación relativa de la posición debido a los movimientos y giros del avión durante el vuelo. La orientación (absoluta y relativa) se utiliza para determinar la ubicación del centro óptico del sensor durante el vuelo y colecta de datos.
+
+La distancia entre el sensor y el punto de incidencia del haz de luz láser, puede determinarse a partir del intervalo de tiempo entre la emisión y el retorno del pulso. Conocida la posición del sensor, la distancia y el ángulo del espejo al momento de la emisión del haz de luz láser, se cuenta con los elementos para determinar las coordenadas tridimensionales del punto de incidencia en el terreno.
+
+Para cada pulso emitido se pueden registrar hasta tres retornos, y para cada uno de ellos se registra el valor de intensidad de señal reflejada.
+
+Cuando el haz de luz láser incide en el terreno o en los objetos ubicados sobre éste, se presentan diferentes formas de retorno. En una superficie sólida (edificios, suelo, vehículos, entre otros) el haz de luz se refleja de manera inmediata al sensor. En el agua y el vidrio, el haz de luz presenta reflexión especular, efecto que puede originar que el pulso de luz láser no retorne al sensor dependiendo del ángulo de incidencia. En algunas zonas volcánicas, en áreas en las que se presenta vegetación carbonizada o cuando existe asfalto de reciente colocación, el haz de luz es absorbido, por lo que no se pueden obtener datos sobre este tipo de superficies. En zonas de vegetación, el haz de luz incide en la capa superior de los árboles y una parte del mismo retorna al sensor (primer retorno), otras partes pueden penetrar entre los huecos del follaje hasta chocar con algún objeto y retornar (segundo retorno) y otras partes siguen penetrando, siendo posible la reflexión en la superficie del suelo, cuando la vegetación no es muy densa (tercer retorno).
+
+DATOS GENERALES DEL LEVANTAMIENTO:
+A) Aeronave, Cessna 441, Conquest II.
+B) Altura promedio de vuelo, 5500 metros.
+C) Ángulo del espejo, 60 grados.
+D) Velocidad promedio de vuelo, 190 nudos.
+E) Líneas de barrido (para la línea de producción) de longitud promedio de 55 km y ancho promedio de 5.7 km.
+F) Distancia máxima entre receptor GPS en tierra y receptor GPS aerotransportado, 120 km.
+G) Intervalo de grabación de datos GPS en frecuencia dual, cada 0.5 segundos.
+H) Frecuencia de grabación de datos de la IMU, 200 Hz.
+
+ESPECIFICACIONES DEL PRODUCTO:
+A) Densidad mínima promedio de puntos láser al centro de las líneas de barrido, 0.021 puntos por metro cuadrado.
+B) Distribución de puntos acorde con un patrón de barrido en zigzag.
+C) Separación máxima promedio entre puntos (Along Track - Across Track), 10.80 por 8.50 metros.
+D) Los archivos de la nube de puntos se proporcionan con un valor por defecto para el atributo de clasificación.
+E) Porcentaje de superficie con falta de información derivada de la presencia de nubosidad, menor al 1%.
+F) Los archivos de la nube de puntos se proporcionan con datos en las áreas de traslapo y sobre cuerpos de agua ubicados en los ejes nadirales de las líneas de vuelo.
+
+INFORMACIÓN DE LAS LÍNEAS DE BARRIDO QUE INTEGRAN LA NUBE DE PUNTOS:
+
+1, 100915_173745, 1, 11.8, 23600, ALS60
+2, 100915_175325, 1, 11.8, 23600, ALS60
+3, 100915_180816, 1, 11.8, 23600, ALS60
+
+Nomenclatura: No, ID, TIPO, SR, PR, SIS
+
+Donde,
+No: Número de la línea de barrido
+ID: Identificador de línea de barrido en formato fecha_hora de colecta (AAMMDD_HHMMSS  AñoMesDía_HoraMinutoSegundo). Corresponde al identificador del archivo LAS
+Tipo: Cobertura de la línea de barrido (1, Completa; T, Transversal; H, para cubrimiento de huecos; F, huecos cubiertos con malla fotogramétrica)
+SR: Frecuencia de barrido del espejo (Hz)
+PR: Frecuencia de emisión de pulsos (Hz)
+SIS: Modelo del sistema LiDAR utilizado </abstract>
+<MD_DataIdentification_language>ES - Español.</MD_DataIdentification_language>
+<topicCategory>
+<principalTopic>  8. Base de imágenes de mapas de la cobertura de la tierra: Mapas base.</principalTopic>
+<groupCategory>4. Grupo de datos topográficos: Subdivisión de la Infraestructura de Datos Espaciales de México que contiene elementos que caracterizan parte o toda la superficie  terrestre, constituidos por datos referidos a los componentes físicos del paisaje y de los correspondientes a objetos de infraestructura humana. Particularizan un terreno en su configuración superficial, permitiendo la identificación de la disposición y forma de sus partes y lo distinguen de otros semejantes.</groupCategory>
+<groupCategory>5. Grupo de datos de relieve continental, insular y submarino: Subdivisión de la Infraestructura de Datos Espaciales de México que a través de valores de distancias verticales con respecto a una superficie de referencia, representan la distribución de alturas y profundidades características de las formas del terreno. </groupCategory>
+</topicCategory>
+<keyword>Altimetría</keyword>
+<type>5. Tema: La palabra clave que identifica un tema o materia particular.</type>
+<keyword>Nube de puntos LiDAR</keyword>
+<type>5. Tema: La palabra clave que identifica un tema o materia particular.</type>
+<keyword>Tecnología LiDAR</keyword>
+<type>5. Tema: La palabra clave que identifica un tema o materia particular.</type>
+<keyword>Red Irregular de Triángulos (TIN)</keyword>
+<type>5. Tema: La palabra clave que identifica un tema o materia particular.</type>
+<keyword>Percepción remota activa</keyword>
+<type>5. Tema: La palabra clave que identifica un tema o materia particular.</type>
+<thesaurusName>
+</thesaurusName>
+<edition>
+</edition>
+<presentationForm>  3. Imagen digital: Imagen semejante a cosas construidas por el hombre, objetos y actividades adquiridas por medio de la percepción visual o por medio de sensores en cualquier segmento del espectro electromagnético (infrarrojo térmico, radar de alta resolución) y almacenados en formato digital.</presentationForm>
+<presentationForm>  7. Modelo digital: Representación digital multi-dimensional de un objeto, proceso, etc. </presentationForm>
+<CI_OnlineResource>
+<CI_OnlineResource_linkage>http://www.inegi.org.mx/</CI_OnlineResource_linkage>
+<CI_OnlineResource_description>Página oficial con información geográfica y demográfica de México, donde se puede obtener el recurso con base en las políticas.</CI_OnlineResource_description>
+</CI_OnlineResource>
+<maintenanceAndUpdateFrequency>  9. No programado: La actualización de los datos no está planeada.</maintenanceAndUpdateFrequency>
+<MD_DataIdentification_characterSet>  6. 8859parte1: ISO/IEC 8859-1, Tecnologías de la Información - Conjuntos de caracteres gráficos codificados de 8-bit por byte - Parte 1: Alfabeto Latino No.1.</MD_DataIdentification_characterSet>
+<graphfilename>Nube_puntos_LiDAR_H12D22a1.jpg</graphfilename>
+<specuse>
+USO INTERNO 1: La Dirección General de Geografía y Medio Ambiente del INEGI usa la Nube de puntos LiDAR ajustada al terreno para el análisis y evaluación del Continuo de Elevaciones Mexicano (CEM50) el cual aportar datos del relieve continental al Subsistema Nacional de Información Geográfica y del Medio ambiente, además de ofrecerlo al público en general.
+
+USO INTERNO 2: La Dirección General de Geografía y Medio Ambiente del INEGI usa la Nube de puntos LiDAR ajustada al terreno para la generación de Modelos Digitales de Elevación de tipo Superficie (MDS), estos se obtienen de la Nube de puntos LiDAR ajustada al terreno, de la que se seleccionan todos los puntos que fueron captados sobre la superficie del terreno, generando una "nube de puntos clasificada" a la que se le aplica una interpolación a los puntos clasificados del primer al último retorno y que corresponden tanto al terreno como a los elementos de este, como por ejemplo infraestructura y vegetación, para conocer aspectos del terreno tales como: la elevación de cualquier punto, la pendiente, los desniveles, las áreas factibles de inundación, los puntos de visión, los volúmenes de tierra, las cuencas y subcuencas, entre otros, por lo que se convierten en una fuente de información de gran utilidad en estudios del medio ambiente, hidrológicos, de agricultura, forestales, de energía, de zonas de riesgo, de telecomunicaciones, de infraestructura, entre los más importantes.
+
+USO INTERNO 3: La Dirección General de Geografía y Medio Ambiente del INEGI usa la Nube de puntos LiDAR ajustada al terreno para Generación de Modelos Digitales de Elevación de tipo Terreno (MDT), estos se obtienen de la Nube de puntos LiDAR ajustada al terreno, de la que se seleccionan aquellos puntos que corresponden únicamente al terreno, generando una "nube de puntos clasificada" a la que se le aplica una interpolación a los puntos clasificados del último retorno y habiendo eliminado aquellos puntos que no pertenecen al terreno como los reflejados por infraestructura, vegetación y objetos aéreos como nubes o pájaros, para conocer aspectos del terreno tales como: la elevación de cualquier punto, la pendiente, los desniveles, las áreas factibles de inundación, los puntos de visión, los volúmenes de tierra, las cuencas y subcuencas, entre otros, por lo que se convierten en una fuente de información de gran utilidad en estudios del medio ambiente, hidrológicos, de agricultura, forestales, de energía, de zonas de riesgo, de telecomunicaciones, de infraestructura, entre los más importantes.
+
+USO EXTERNO 1: El Centro Nacional Para la Prevención de Desastres (CENAPRED) usa la Nube de puntos LiDAR ajustada al terreno para la generación de información y variables para la gestión integral de prevención del riesgo; como insumo para los sistemas de monitoreo y alertas tempranas; análisis de vulnerabilidad por fenómenos hidrometeorológicos con el fin de prevenir desastres por fenómenos naturales.
+
+USO EXTERNO 2: El Centro de Investigación Científica y de Educación Superior de Ensenada, Baja california (CICESE) Nacional usa la Nube de puntos LiDAR ajustada al terreno para la elaboración de mapas en tres dimensiones en el estudio de la deformación de la corteza terrestre en eventos sísmicos (pre-sísmicos, pos-sísmicos).
+
+USO EXTERNO 3: Especialistas en las ciencias de la Tierra e ingeniería utilizan la Nube de puntos LiDAR ajustada al terreno en estudios de cambios morfológicos de la red de drenajes volcánicos para el Centro de Geociencias de la Universidad Nacional Autónoma de México. En simulaciones de flujos de escombros volcánicos para el Centro de Intercambio e Investigación en Vulcanología de la Facultad de Ciencias de la Universidad de Colima. En la planeación de desarrollos de parques eólicos para Gobiernos Estatales. En el análisis de arribos de aviones comerciales a los aeropuertos. En investigaciones en el área de recursos hídricos.</specuse>
+</MD_DataIdentification>
+<CI_Date>
+<Dates_Events>
+<date>2013-08-16</date>
+<dateType>1. Creación: Indicador  de la fecha que especifica cuando fue creado el recurso.</dateType>
+</Dates_Events>
+<Ad_Date>
+<date_creation>2010-09-15</date_creation><inpname>Datos LiDAR crudos y GPS de tierra, colectados.</inpname></Ad_Date>
+</CI_Date>
+<CI_ResponsibleParty>
+<CI_ResponsibleParty_individualName>Rocio Hernández Reyes.</CI_ResponsibleParty_individualName>
+<CI_ResponsibleParty_organisationName>Instituto Nacional de Estadística y Geografía - INEGI.</CI_ResponsibleParty_organisationName>
+<CI_ResponsibleParty_positionName>Encargada del Departamento de Atención a Usuarios y Comercialización.</CI_ResponsibleParty_positionName>
+<CI_ResponsibleParty_voice>(449)9105300 Ext. 1406, 1407 y 1408. Lada 01 800 111 46 34.</CI_ResponsibleParty_voice>
+<CI_ResponsibleParty_facsimile></CI_ResponsibleParty_facsimile>
+<CI_ResponsibleParty_deliveryPoint>Av. Héroe de Nacozari Sur Núm. 2301. Fracc. Jardines del Parque.</CI_ResponsibleParty_deliveryPoint>
+<CI_ResponsibleParty_city>Aguascalientes.</CI_ResponsibleParty_city>
+<CI_ResponsibleParty_administrativeArea>Aguascalientes.</CI_ResponsibleParty_administrativeArea>
+<CI_ResponsibleParty_postalCode>20276.</CI_ResponsibleParty_postalCode>
+<CI_ResponsibleParty_country>México.</CI_ResponsibleParty_country>
+<CI_ResponsibleParty_electronicMailAddress>atencion.usuarios@inegi.org.mx</CI_ResponsibleParty_electronicMailAddress>
+<CI_ResponsibleParty_linkage>http://www.inegi.org.mx/</CI_ResponsibleParty_linkage>
+<CI_ResponsibleParty_role>  5. Distribuidor: Parte que distribuye el recurso.</CI_ResponsibleParty_role>
+</CI_ResponsibleParty>
+<CI_ResponsibleParty>
+<CI_ResponsibleParty_individualName>Javier Arellano Sánchez.</CI_ResponsibleParty_individualName>
+<CI_ResponsibleParty_organisationName>Instituto Nacional de Estadística y Geografía - INEGI.</CI_ResponsibleParty_organisationName>
+<CI_ResponsibleParty_positionName>Subdirector de Control de Operaciones Geodésicas.</CI_ResponsibleParty_positionName>
+<CI_ResponsibleParty_voice>(52) (449) 910 53 00. Extensión 5870.</CI_ResponsibleParty_voice>
+<CI_ResponsibleParty_facsimile></CI_ResponsibleParty_facsimile>
+<CI_ResponsibleParty_deliveryPoint>Av. Héroe de Nacozari Sur Núm. 2301. Fracc. Jardines del Parque.</CI_ResponsibleParty_deliveryPoint>
+<CI_ResponsibleParty_city>Aguascalientes.</CI_ResponsibleParty_city>
+<CI_ResponsibleParty_administrativeArea>Aguascalientes.</CI_ResponsibleParty_administrativeArea>
+<CI_ResponsibleParty_postalCode>20276</CI_ResponsibleParty_postalCode>
+<CI_ResponsibleParty_country>México.</CI_ResponsibleParty_country>
+<CI_ResponsibleParty_electronicMailAddress>javier.arellano@inegi.org.mx</CI_ResponsibleParty_electronicMailAddress>
+<CI_ResponsibleParty_linkage>http://www.inegi.org.mx/</CI_ResponsibleParty_linkage>
+<CI_ResponsibleParty_role>  6. Creador: Parte que creó el recurso.</CI_ResponsibleParty_role>
+</CI_ResponsibleParty>
+<geographicElement>
+<EX_GeographicBoundingBox>
+<westBoundLongitude>-110.666667</westBoundLongitude>
+<eastBoundLongitude>-110.611111</eastBoundLongitude>
+<southBoundLatitude> 29.687500</southBoundLatitude>
+<northBoundLatitude> 29.750000</northBoundLatitude>
+</EX_GeographicBoundingBox>
+<spatialRepresentationType>1. Vector: Los datos vectoriales se utilizan para representar datos espaciales.</spatialRepresentationType>
+</geographicElement>
+<MD_ReferenceSystem>
+<ReferenceHorizontalSystem>
+<geograph>
+<latres></latres>
+<longres></longres>
+<geogunit></geogunit>
+</geograph>
+<planar>
+<mapprojn>
+<lambertc>
+<lambertc_stdparll></lambertc_stdparll>
+<lambertc_longcm></lambertc_longcm>
+<lambertc_latprjo></lambertc_latprjo>
+<lambertc_feast></lambertc_feast>
+<lambertc_fnorth></lambertc_fnorth>
+</lambertc>
+<mercatort>
+<mercatort_sfctrmer></mercatort_sfctrmer>
+<mercatort_longcm></mercatort_longcm>
+<mercatort_latprjo></mercatort_latprjo>
+<mercatort_feast></mercatort_feast>
+<mercatort_fnorth></mercatort_fnorth>
+</mercatort>
+<mercator>
+<mercator_stdparll></mercator_stdparll>
+<mercator_sfec></mercator_sfec>
+<mercator_longcm></mercator_longcm>
+<mercator_feast></mercator_feast>
+<mercator_fnorth></mercator_fnorth>
+</mercator>
+<tme>
+<tme_sfctrmer></tme_sfctrmer>
+<tme_longcm></tme_longcm>
+<tme_latprjo></tme_latprjo>
+<tme_feast></tme_feast>
+<tme_fnorth></tme_fnorth>
+</tme>
+<anoth_proj_def></anoth_proj_def>
+</mapprojn>
+<gridcoordinatessystem>
+<utm>
+<utm_zone>12</utm_zone>
+<utm_sfctrmer>0.9996</utm_sfctrmer>
+<utm_longcm>-111.0000</utm_longcm>
+<utm_latprjo>00.0000</utm_latprjo>
+<utm_feast>500000.0</utm_feast>
+<utm_fnorth>0.0</utm_fnorth>
+</utm>
+</gridcoordinatessystem>
+<local_planar>
+<local_planar_desc></local_planar_desc>
+<local_planar_geo_inf></local_planar_geo_inf>
+</local_planar>
+<planci>
+<plance>Par coordenado.</plance>
+<coord_repres>
+<absres>0.01</absres>
+<ordres>0.01</ordres>
+</coord_repres>
+<distance_and_bearing_repres>
+<distance_res></distance_res>
+<bearing_res></bearing_res>
+<bearing_uni></bearing_uni>
+<ref_bearing_dir></ref_bearing_dir>
+<ref_bearing_mer></ref_bearing_mer>
+</distance_and_bearing_repres>
+<plandu>Metros.</plandu>
+</planci>
+</planar>
+<local_coordinates>
+<local_desc></local_desc>
+<local_geo_inf></local_geo_inf>
+</local_coordinates>
+<geodetic>
+<horizdn>ITRF08 época 2010.0.</horizdn>
+<ellips>Sistema Geodésico de Referencia de 1980 (GRS80).</ellips>
+<semiaxis>6378137.0</semiaxis>
+<denflat>298.2572221</denflat>
+</geodetic>
+</ReferenceHorizontalSystem>
+<ReferenceVerticalSystem>
+<altsys>
+<altdatum>Alturas Elipsoidales GRS80</altdatum>
+<altres>0.01</altres>
+<altunits>Metros.</altunits>
+<altenc>Coordenadas implícitas.</altenc>
+</altsys>
+<depthsys>
+<depthdn></depthdn>
+<depthres></depthres>
+<depthdu></depthdu>
+<depthem>
+</depthem>
+</depthsys>
+</ReferenceVerticalSystem>
+</MD_ReferenceSystem>
+<DQ_DataQuality>
+<DQ_Scope>
+<level>10. Tipo de objeto espacial: Información aplicada al tipo de objeto espacial.</level>
+</DQ_Scope>
+<report>
+<DQ_Completeness>
+<DQ_Completeness_evalqualsubname>
+<DQ_Completeness_nameOfMeasure></DQ_Completeness_nameOfMeasure>
+<DQ_Completeness_measureDescription></DQ_Completeness_measureDescription>
+<DQ_Completeness_result>
+<DQ_Completeness_DQ_QuantitativeResult>
+<DQ_Completeness_valueUnit></DQ_Completeness_valueUnit>
+<DQ_Completeness_value></DQ_Completeness_value></DQ_Completeness_DQ_QuantitativeResult>
+</DQ_Completeness_result>
+</DQ_Completeness_evalqualsubname>
+</DQ_Completeness>
+<DQ_LogicConsistency>
+<DQ_LogicConsistency_evalqualsubname>
+<DQ_LogicConsistency_nameOfMeasure></DQ_LogicConsistency_nameOfMeasure>
+<DQ_LogicConsistency_measureDescription></DQ_LogicConsistency_measureDescription>
+<DQ_LogicConsistency_result>
+<DQ_LogicConsistency_DQ_QuantitativeResult>
+<DQ_LogicConsistency_valueUnit></DQ_LogicConsistency_valueUnit>
+<DQ_LogicConsistency_value></DQ_LogicConsistency_value></DQ_LogicConsistency_DQ_QuantitativeResult>
+</DQ_LogicConsistency_result>
+</DQ_LogicConsistency_evalqualsubname>
+</DQ_LogicConsistency>
+<PositionalAccuracy>
+<PositionalAccuracy_evalqualsubname>Exactitud posicional vertical relativa.
+<PositionalAccuracy_nameOfMeasure>Exactitud de la altura elipsoidal de la Nube de puntos LiDAR ajustada al terreno.</PositionalAccuracy_nameOfMeasure>
+<PositionalAccuracy_measureDescription>
+ÁMBITO DE APLICACIÓN DE LA PRUEBA DE EVALUACIÓN: Altura elipsoidal de todos los puntos de la cobertura nacional del producto correspondientes al terreno.
+
+TIPO DE INSPECCIÓN: Muestral.
+
+TIPO DE MUESTREO: En dos etapas, de tipo aleatorio y dirigido respectivamente (bietápico); 1ª ETAPA: consistió en escoger como datos de referencia los puntos GPS para control fotogramétrico ya existentes, cuya ubicación no fue determinada para esta prueba, lo cual le da a esta etapa su carácter aleatorio. 2ª ETAPA: usando como centro cada punto GPS, se definió un círculo de 20 metros de radio; todos los puntos del producto ubicados dentro del círculo formaron parte de la muestra, lo cual da a esta etapa características de muestreo dirigido.
+
+TAMAÑO DE LA MUESTRA: No se aplica. El número de puntos de la muestra es indeterminado.
+
+PORCENTAJE DE LA MUESTRA: No se aplica. El número de puntos de la muestra y del ámbito es indeterminado.
+
+EXPLICACIÓN DE LA PRUEBA: 1. Se generaron superficies triangulares a partir de la interpolación de los puntos dentro de cada círculo de revisión. 2. Se calculó el valor promedio de altura elipsoidal de cada superficie triangular. 3. Se comparó el valor de altura elipsoidal de la superficie triangular de cada círculo con el del punto de referencia correspondiente, obteniéndose un valor de error por círculo. 4. Se realizó un procesamiento estadístico que incluyó todos los valores de error, para obtener el error medio cuadrático.
+
+NOMBRE DEL INDICADOR: Error Medio Cuadrático (EMC).
+
+QUÉ EXPRESA EL INDICADOR: La exactitud de la altura elipsoidal de la Nube de puntos LiDAR ajustada al terreno.
+
+DATOS DE REFERENCIA: 2,900 coordenadas geodésicas (latitud, longitud y altura elipsoidal) de puntos GPS para control fotogramétrico, establecidos durante el período 2004 al 2011.
+
+CÓDIGO IDENTIFICADOR DE LA PRUEBA: No se aplica.
+
+FECHA O PERÍODO DE REALIZACIÓN: Mayo a junio de 2011.
+
+OBJETIVO DE LA EVALUACIÓN: Ofrecer al usuario información objetiva sobre el nivel de confiabilidad del valor de altura elipsoidal de la Nube de puntos LiDAR ajustada al terreno, para que estime su aptitud de uso.
+
+OBSERVACIONES: 1. Respecto al ámbito, los puntos señalados como "correspondientes al terreno", son aquéllos que después del proceso de ajuste cumplieron con las tolerancias establecidas para considerarse que fueron correctamente ajustados al terreno. 2. Respecto a la explicación de la prueba: ésta es similar a la denominada Accuracy of Airborne Lidar-Derived Elevation: Empirical Assessment and Error Budget, diseñada por Michael E. Hodgson y Patrick Bresnahan, y publicada por la Sociedad Americana de Fotogrametría y Teledetección (American Society of Photogrammetry and Remote Sensing, ASPRS)</PositionalAccuracy_measureDescription>
+<PositionalAccuracy_result>
+<PositionalAccuracy_DQ_QuantitativeResult>
+<PositionalAccuracy_valueUnit>Metros.</PositionalAccuracy_valueUnit>
+<PositionalAccuracy_value>0.38 Este nivel de conformidad está basado en especificaciones internas establecidas para la elaboración de Modelos Digitales de Elevación.</PositionalAccuracy_value>
+</PositionalAccuracy_DQ_QuantitativeResult>
+</PositionalAccuracy_result>
+</PositionalAccuracy_evalqualsubname>
+</PositionalAccuracy>
+<TemporalAccuracy>
+<TemporalAccuracy_evalqualsubname>
+<TemporalAccuracy_nameOfMeasure></TemporalAccuracy_nameOfMeasure>
+<TemporalAccuracy_measureDescription></TemporalAccuracy_measureDescription>
+<TemporalAccuracy_result>
+<TemporalAccuracy_DQ_QuantitativeResult>
+<TemporalAccuracy_valueUnit></TemporalAccuracy_valueUnit>
+<TemporalAccuracy_value></TemporalAccuracy_value></TemporalAccuracy_DQ_QuantitativeResult>
+</TemporalAccuracy_result>
+</TemporalAccuracy_evalqualsubname>
+</TemporalAccuracy>
+<ThematicAccuracy>
+<ThematicAccuracy_evalqualsubname>
+<ThematicAccuracy_nameOfMeasure></ThematicAccuracy_nameOfMeasure>
+<ThematicAccuracy_measureDescription></ThematicAccuracy_measureDescription>
+<ThematicAccuracy_result>
+<ThematicAccuracy_DQ_QuantitativeResult>
+<ThematicAccuracy_valueUnit></ThematicAccuracy_valueUnit>
+<ThematicAccuracy_value></ThematicAccuracy_value></ThematicAccuracy_DQ_QuantitativeResult>
+</ThematicAccuracy_result>
+</ThematicAccuracy_evalqualsubname>
+</ThematicAccuracy>
+</report>
+<LI_Lineage>
+<statement>A través del uso de tecnología de percepción remota activa se combinan datos de GPS, Unidad de Medición Inercial y Láser para obtener datos altimétricos en y sobre el terreno para generar nubes de puntos LiDAR mediante el uso de software especializado se realiza el cálculo de trayectoria del sistema instalado en la plataforma aérea, se genera la nube de puntos ajustada al terreno mediante procesos geodésicos y se pone a disposición de usuarios internos y/o externos.</statement>
+<LI_ProcessStep>
+<LI_ProcessStep_description>1. PLANEACIÓN DEL PROYECTO. Se determinan los límites de la zona a cubrir; se establece la ubicación de estaciones base GPS y la ubicación de campos de control; se elabora el plan geométrico de vuelo y se determinan los parámetros para la colecta de datos LiDAR.</LI_ProcessStep_description>
+<LI_ProcessStep_description>2. OBTENCIÓN DE CAMPOS DE CONTROL TERRESTRE. Previo a la realización del vuelo de colecta, mediante el uso de equipo GPS se levantan una serie de puntos espaciados homogéneamente sobre áreas o zonas planas, denominados campos de control, cuya finalidad es compensar los errores sistemáticos presentes en las alturas de los puntos láser.</LI_ProcessStep_description>
+<LI_ProcessStep_description>3. COLECTA DE DATOS. Desde la aeronave se obtiene información de GPS, datos de la actitud del avión a través de la Unidad de Medición Inercial, fotografías de cámara no métrica, e información de los pulsos láser emitidos-colectados. De manera simultánea al vuelo de colecta, en tierra, mediante una estación geodésica ligada a la Red Geodésica Nacional Activa se colectan datos GPS.</LI_ProcessStep_description>
+<LI_ProcessStep_description>4. CONTROL DE CALIDAD Y OBTENCIÓN DE LA POSICIÓN DEL SENSOR. Se verifica la calidad de los datos en cuanto a la precisión de la trayectoria del avión, mediante un proceso de corrección diferencial, tomando como base la estación GPS de tierra; la trayectoria de vuelo es corregida utilizando los datos de actitud del avión con el fin de obtener la posición del sensor en cada momento de la emisión del haz de luz láser. Se verifica la completitud de la cobertura de los datos LiDAR y GPS colectados, acorde con las especificaciones del proyecto.</LI_ProcessStep_description>
+<LI_ProcessStep_description>5. GENERACIÓN DE NUBE DE PUNTOS LÁSER. La combinación de los datos de posición del sensor, los datos de tiempo y ángulo de barrido en el instante de emisión, así como la distancia sensor-terreno, determinados por el sistema láser, se utilizan para obtener la posición tridimensional sobre el terreno para cada retorno de pulso.</LI_ProcessStep_description>
+<LI_ProcessStep_description>6. AJUSTE Y EDICIÓN DE LA NUBE DE PUNTOS AL TERRENO. Las líneas de barrido denominadas transversales se comparan con los puntos de los campos de control y se obtienen los valores de corrección en altura; los valores obtenidos se aplican en forma de incremento o decremento a la nube de puntos según sea el caso. La línea transversal ajustada a campos de control se utiliza para corregir los valores de altimetría de cada una de las líneas del proyecto. Para finalizar el ajuste de la nube de puntos al terreno, se realiza el ajuste de las líneas de barrido tomando como referencia las áreas de sobreposición (corrección de alabeo, cabeceo, deriva y factor de escala). Finalmente, a partir de un análisis visual detallado sobre las áreas de sobreposición, se asegura la continuidad espacial entre datos colindantes; en caso que se observe diferencias de altura entre datos colindantes se realizan actividades de edición asistida, con el fin de disminuir las diferencias en altura para mantener la continuidad espacial.</LI_ProcessStep_description>
+<LI_ProcessStep_description>7. CAMBIO DE SISTEMA GEODÉSICO DE REFERENCIA. Para los datos colectados antes del año 2011 y que forman parte de la placa tectónica de Norteamérica, se aplica un procedimiento de transformación basado en el programa TRANITRF, diseñado para la transformación de archivos LAS, del Marco de Referencia Terrestre Internacional (ITRF, por sus siglas en inglés) de 1992 época 1988.0, al ITRF 2008 época 2010.0.</LI_ProcessStep_description>
+<LI_ProcessStep_description>8. CORTE DE LA NUBE DE PUNTOS. Se corta la nube de puntos ajustada al terreno con base en los límites de formatos cartográficos escala 1: 10,000.</LI_ProcessStep_description>
+<LI_ProcessStep_description>TECNOLOGÍA UTILIZADA: a) software comercial: especializado para el proceso de datos LiDAR; b) hardware: estaciones de trabajo.</LI_ProcessStep_description>
+</LI_ProcessStep>
+<LI_Source>
+<LI_Source_description>FUENTE INEGI: Coordenadas geodésicas tridimensionales de puntos correspondientes a los campos de control. Establecidos en el periodo 2004-2011 para el ajuste de la nube de puntos al terreno.</LI_Source_description>
+<LI_Source_description>FUENTE INEGI: Datos LiDAR crudos y de GPS en tierra, colectados.</LI_Source_description>
+</LI_Source>
+</LI_Lineage>
+</DQ_DataQuality>
+<Attributes>
+<schemaAscii>La entidad es de tipo puntual, con posición tridimensional de valores X, Y, Z, de acuerdo con el formato de archivos LAS.</schemaAscii>
+<entity_detail>Estándar LAS de la ASPRS (American Society of Photogrammetry and Remote Sensing), versión 1.0.
+
+Se proporciona en archivo tipo binario en formato LAS de la ASPRS (American Society of Photogrammetry and Remote Sensing), que es un estándar público para el intercambio de datos de LiDAR entre generadores y usuarios; su uso es alternativo a formatos de sistemas propietarios y genéricos de intercambio ASCII. Los archivos LAS conservan información específica propia de la naturaleza de los sistemas LiDAR que corresponde a los atributos de los puntos que conforman la nube, como son: posición, número de línea de barrido, ángulo de espejo del sensor en el momento de la emisión, intensidad y tipo de retorno, tiempo de captura GPS, entre otros.</entity_detail>
+</Attributes>
+<MD_Distribution>
+<accessConstraints></accessConstraints>
+<useConstraints></useConstraints>
+<otherConstraints>El Instituto Nacional de Estadística y Geografía - INEGI no se hace responsable por el uso que se le dé a los datos.</otherConstraints>
+<MD_Format>
+<name>LAS</name>
+<version>1.0</version>
+</MD_Format>
+</MD_Distribution>
+<Inf_Metadata>
+<metadataStandardName>ISO 19115 Información Geográfica - Metadatos (Norma Técnica para Metadatos).</metadataStandardName>
+<metadataStandardVersion>2003 (1.0).</metadataStandardVersion>
+<Inf_Metadata_language>ES - Español.</Inf_Metadata_language>
+<CI_ResponsibleParty>
+<Inf_Metadata_CI_ResponsibleParty_individualName>Lic. Rafael Arrioja Urzúa.</Inf_Metadata_CI_ResponsibleParty_individualName>
+<Inf_Metadata_CI_ResponsibleParty_organisationName>Instituto Nacional de Estadística y Geografía - INEGI.</Inf_Metadata_CI_ResponsibleParty_organisationName>
+<Inf_Metadata_CI_ResponsibleParty_positionName>Jefe del Departamento de Administración de Metadatos.</Inf_Metadata_CI_ResponsibleParty_positionName>
+<Inf_Metadata_CI_ResponsibleParty_voice>(449)9105300 Ext. 1750 y 5631.</Inf_Metadata_CI_ResponsibleParty_voice>
+<Inf_Metadata_CI_ResponsibleParty_facsimile>(449)4424145.</Inf_Metadata_CI_ResponsibleParty_facsimile>
+<Inf_Metadata_CI_ResponsibleParty_deliveryPoint>Av. Héroe de Nacozari Sur Núm. 2301. Fracc. Jardines del Parque.</Inf_Metadata_CI_ResponsibleParty_deliveryPoint>
+<Inf_Metadata_CI_ResponsibleParty_city>Aguascalientes.</Inf_Metadata_CI_ResponsibleParty_city>
+<Inf_Metadata_CI_ResponsibleParty_administrativeArea>Aguascalientes.</Inf_Metadata_CI_ResponsibleParty_administrativeArea>
+<Inf_Metadata_CI_ResponsibleParty_postalCode>20276</Inf_Metadata_CI_ResponsibleParty_postalCode>
+<Inf_Metadata_CI_ResponsibleParty_country>México</Inf_Metadata_CI_ResponsibleParty_country>
+<Inf_Metadata_CI_ResponsibleParty_electronicMailAddress>rafael.arrioja@inegi.org.mx</Inf_Metadata_CI_ResponsibleParty_electronicMailAddress>
+<Inf_Metadata_CI_ResponsibleParty_role>  7. Punto de contacto: Parte que puede ser contactada para informarse sobre el recurso o adquisición del mismo.</Inf_Metadata_CI_ResponsibleParty_role>
+</CI_ResponsibleParty>
+<dateStamp>2013-08-19</dateStamp>
+<Inf_Metadata_characterSet>  6. 8859parte1: ISO/IEC 8859-1, Tecnologías de la Información - Conjuntos de caracteres gráficos codificados de 8-bit por byte - Parte 1: Alfabeto Latino No.1.</Inf_Metadata_characterSet>
+</Inf_Metadata>
+</Metadata>
